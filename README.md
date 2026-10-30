@@ -14,3 +14,20 @@ E-commerce order processing using Event-driven Architecture.
 - NFR2 : Extensibility : We should be able to add new handlers easily.
 - NFR3 : Maintainability : Event publishing and event handling should be separate.
 - NFR4 : Reliability : A failure in one handler should not prevent other handlers from eecuting.
+
+## Folder strucutre:
+
+event-driven-architecture-ecommerce-order-processing/
+│
+├── main.py
+├── events.py
+├── event_bus.py
+├── order_service.py
+│
+├── handlers/
+│   ├── __init__.py
+│   ├── email_handler.py
+│   ├── inventory_handler.py
+│   └── shipping_handler.py
+│
+└── README.md
