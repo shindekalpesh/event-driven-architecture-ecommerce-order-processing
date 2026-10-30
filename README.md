@@ -17,6 +17,7 @@ E-commerce order processing using Event-driven Architecture.
 
 ## Folder strucutre:
 
+```text
 event-driven-architecture-ecommerce-order-processing/
 │
 ├── main.py
@@ -31,3 +32,4 @@ event-driven-architecture-ecommerce-order-processing/
 │   └── shipping_handler.py
 │
 └── README.md
+```
