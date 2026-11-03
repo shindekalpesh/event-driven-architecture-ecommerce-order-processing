@@ -19,6 +19,10 @@ from handlers.shipping_handler import (
     initiate_shipping
 )
 
+from handlers.analytics_handler import (
+    track_order
+)
+
 # 1. Create Event Bus
 event_bus = EventBus()
 
@@ -36,6 +40,11 @@ event_bus.subscribe(
 event_bus.subscribe(
     OrderCreated,
     initiate_shipping
+)
+
+event_bus.subscribe(
+    OrderCreated,
+    track_order
 )
 
 # 3. Create Order Service
