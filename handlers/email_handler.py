@@ -2,7 +2,7 @@ def send_confirmation_email(event):
 
     print(
         f"[EMAIL] Sending confirmation to"
-        f"{event.customer_eamail}"
+        f"{event.customer_email}"
     )
 
     print(
