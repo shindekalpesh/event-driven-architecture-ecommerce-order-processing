@@ -17,7 +17,7 @@ class EventObserver:
         )
 
         self.metrics.increment(
-            f"events.punlished.{event_name}"
+            f"events.published.{event_name}"
         )
 
     def handler_started(self, event, handler):
